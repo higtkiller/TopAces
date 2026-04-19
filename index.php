@@ -10,7 +10,7 @@ switch($page) {
         break;
 
     case 'welcome':
-        include "pages\welcome.html";
+        include "pages/welcome.html";
         break;
 
     case 'login':
