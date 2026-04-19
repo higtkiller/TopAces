@@ -14,7 +14,7 @@ switch($page) {
         break;
 
     case 'login':
-        include "pages\login.html.php";
+        include "pages/login.html.php";
         break;
 
     case 'register':
