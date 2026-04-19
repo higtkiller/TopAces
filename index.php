@@ -18,7 +18,7 @@ switch($page) {
         break;
 
     case 'register':
-        include 'pages\register.html.php';
+        include 'pages/register.html.php';
         break;
     
     case 'hangar':
@@ -41,7 +41,7 @@ switch($page) {
         include "pages/account.html.php";
         break;
      case 'emailVerification':
-        include "pages\EmailVerification.html.php";
+        include "pages/EmailVerification.html.php";
         break;
     
     case 'admin':
