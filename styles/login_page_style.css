@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    font-family:sans-serif;
+}
+
+p{
+    font-size: 1rem;
+}
+
+body{
+    display:flex;
+}
+
+#logo_section{
+    width:40%;
+    height: 100%;
+    background:radial-gradient(#0A131C,#101C28);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_section img{
+    width:80%;
+}
+
+#login_section{
+  padding-left:6rem;
+  padding-top:5rem;
+  width:60%;
+}
+
+#login_section h1,#verification_section h1{
+   font-size: 3rem;
+   padding-bottom:3rem;
+   
+}
+
+#login_section label{
+    display:block;
+    padding:1rem 0rem 0.5rem 0rem;
+}
+
+#login_section input[type="email"],#login_section input[type="password"],#login_section input[type="repeatPassword"]{
+    width:90%;
+    padding:0.8rem;
+    font-size:1rem;
+    border-radius: 10px;
+    border:1px solid gray;
+}
+
+.error{
+    color:red;
+    font-weight: 100;
+    padding:0.1rem 0rem 1rem 0rem;
+    font-size: 0.9rem;
+}
+
+button{
+    display:block;
+    width:90%;
+    margin:2rem 0rem 0rem 0rem;
+    padding:0.8rem;
+    font-size:1rem;
+    border-radius: 10px;
+    background:radial-gradient(#0A131C,#101C28);
+    border:0px;
+    color:white;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover{
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+#register_link{
+    padding: 1rem 0rem;
+}
+
+a{
+    color:black;
+}
+
+form{
+    width: 100%;
+}
+
+#verification_section{
+    padding:5rem;
+    width:60%;
+}
+
+#numContainer{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputs{
+    
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.num{
+  display: block;
+  width: 5rem;
+  font-size: 4rem;
+  margin: 1rem;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#numContainer button{
+    display: block;
+    width:100%;
+}

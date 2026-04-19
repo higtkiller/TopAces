@@ -1,0 +1,81 @@
+/* Theme Variables */
+:root {
+    /* Dark Theme (Default) */
+    --bg-primary: radial-gradient(#0A131C, #101C28);
+    --bg-secondary: #141F2B;
+    --bg-tertiary: #0F1B28;
+    --bg-card: #141F2B;
+    --bg-hover: #1A2A3A;
+    --bg-input: rgba(255, 255, 255, 0.05);
+    
+    --border-color: rgba(255, 255, 255, 0.05);
+    --border-highlight: rgba(255, 255, 255, 0.1);
+    
+    --text-primary: #E4E7EB;
+    --text-secondary: #B0C4D4;
+    --text-accent: #8FB7E8;
+    --text-muted: #6B7A8A;
+    
+    --accent-primary: #4B8EC8;
+    --accent-secondary: #2E5A7D;
+    --accent-light: #8FB7E8;
+    
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.6);
+    
+    /* Special gradients */
+    --gradient-plane-bg: linear-gradient(160deg, #2C3138, #161A1F);
+}
+
+/* Light Theme - Softer, warmer colors */
+body.light-theme {
+    --bg-primary: linear-gradient(135deg, #E8EEF3, #D4DEE8);
+    --bg-secondary: #F2F6FA;
+    --bg-tertiary: #EBF1F7;
+    --bg-card: #F8FAFC;
+    --bg-hover: #E3EBF3;
+    --bg-input: #EDF2F7;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --border-highlight: rgba(0, 0, 0, 0.12);
+    
+    --text-primary: #000000;
+    --text-secondary: #1A202C;
+    --text-accent: #0D3B5C;
+    --text-muted: #2D3748;
+    
+    --accent-primary: #1E4D75;
+    --accent-secondary: #0F2942;
+    --accent-light: #2C5D8F;
+    
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    
+    /* Special gradients for light theme */
+    --gradient-plane-bg: linear-gradient(160deg, #D8E1EA, #C4D1DD);
+}
+
+/* Smooth theme transition */
+body,
+nav,
+.dashboard-card,
+.stat-card,
+.filter-container,
+.jet-card,
+.plane-card,
+.history-container,
+.simulator-form,
+.back-btn,
+.action-btn,
+.filter-btn,
+.settings-card,
+.stat-box,
+.basic-info,
+.right-panel,
+.plane-image-container,
+.jet-image,
+.top-bar {
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
