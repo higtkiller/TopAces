@@ -2,7 +2,7 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-require_once "other\configDB.php";
+require_once "other/configDB.php";
 $error = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $conn = openConnection();
