@@ -1,10 +1,10 @@
 <?php
-// Railway environment variables or local fallback
-$host = getenv('DB_HOST') ?: 'localhost';
-$dbname = getenv('DB_NAME') ?: 'topaces';
-$username = getenv('DB_USER') ?: 'root';
-$password = getenv('DB_PASSWORD') ?: '';
-$port = getenv('DB_PORT') ?: '3306';
+// Try Railway's native MySQL variables first, then our custom ones, then local fallback
+$host = getenv('MYSQLHOST') ?: getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('MYSQLDATABASE') ?: getenv('DB_NAME') ?: 'topaces';
+$username = getenv('MYSQLUSER') ?: getenv('DB_USER') ?: 'root';
+$password = getenv('MYSQLPASSWORD') ?: getenv('DB_PASSWORD') ?: '';
+$port = getenv('MYSQLPORT') ?: getenv('DB_PORT') ?: '3306';
 
 try {
     $pdo = new PDO(
